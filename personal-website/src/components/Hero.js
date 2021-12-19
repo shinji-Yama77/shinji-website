@@ -4,11 +4,14 @@ import MiddleSection from './middleSection';
 
 const Hero = () => {
   return (
-    <main className='bg-body'>
-      <div className='p-10'>
-        <Navbar />
+    <main className=''>
+      <div className='p-8 sticky top-0 border-b-4 bg-body'>
+          <Navbar />
       </div>
-      <MiddleSection />
+      <div className='bg-white'>
+        <MiddleSection />
+      </div>
+      
       
       
     </main>
