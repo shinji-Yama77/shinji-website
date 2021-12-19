@@ -1,13 +1,13 @@
-import "./App.css";
-import "./index.css";
+import Navbar from './components/Navbar'
+import Hero from './components/Hero';
+import MiddleSection from './components/middleSection';
 
 function App() {
   return (
-    <div className="App">
-      <button className="rounded-lg p-6 text-white bg-blue-500 shadow-lg shadow-blue-500/50">
-        Subscribe
-      </button>
-    </div>
+    <>
+      <Hero />
+    </>
+    
   );
 }
 
