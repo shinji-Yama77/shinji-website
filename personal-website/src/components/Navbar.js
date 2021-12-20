@@ -5,7 +5,7 @@ import navbarStyles from "./Navbar.module.css"
 const Navbar = () => {
   return (
     <header className='container max-w-6xl flex justify-between text-white '>
-      <div>
+      <div className={navbarStyles.trigger}>
         <h1 className={`text-2xl font-semibold ${navbarStyles.ex}`}>Shinji Yamashita</h1>
       </div>
         <ul className='flex text-xl'>

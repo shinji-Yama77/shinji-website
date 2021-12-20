@@ -1,0 +1,42 @@
+.typewriter {
+  font-family: monospace;
+  position: relative;
+  font-size: 4rem;
+  width: max-content;
+}
+
+
+.typewriter::before,
+.typewriter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typewriter::before {
+  background: hsl(49 37% 94%);
+  animation: 
+    newwriter 4s steps(25) forwards
+}
+
+.typewriter::after {
+  width: 0.125em;
+  background: black;
+  animation: 
+    newwriter 4s steps(25) forwards
+}
+
+
+
+@keyframes newwriter {
+  to {
+    left: 100%;
+  }
+}
+
+
+
+

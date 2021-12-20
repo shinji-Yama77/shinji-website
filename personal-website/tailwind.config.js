@@ -8,7 +8,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        'body': '#17171F'
+        'body': '#17171F',
+        'try': 'hsl(49 37% 94%)'
       },
       fontFamily: {
         Poppins: ['Poppins', 'sans-serif'],
