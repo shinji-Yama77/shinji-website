@@ -10,10 +10,10 @@ const Navbar = () => {
       </div>
         <ul className='flex text-xl'>
           <li className={`lg:px-10 px-2 relative ${navbarStyles.btn}`}>
-            <Link activeClass='active' to='home' spy={true} smooth={true}>Home</Link>
+            <Link activeClass='active' to='home' spy={true} offset={-128} smooth={true}>Home</Link>
           </li>
           <li className={`lg:px-10 px-2 relative ${navbarStyles.btn}`}>
-            <Link activeClass='active' to='about' spy={true} smooth={true}>
+            <Link activeClass='active' to='about' spy={true} offset={-128} smooth={true}>
               My Projects
               </Link>
           </li>

@@ -4,9 +4,16 @@ import MiddleSection from './middleSection';
 import heroStyles from './Hero.module.css'
 
 const Hero = () => {
+  const handleClick = (e) => {
+    e.preventDefault()
+    const target = document.getElementById('s').offsetHeight
+    console.log(target)
+  }
+
+
   return (
     <main className=''>
-      <div className='p-8 sticky z-10 top-0 border-b-4 bg-body'>
+      <div id='s' className='p-8 sticky z-10 top-0 border-b-4 bg-body' onClick={handleClick}>
           <Navbar />
       </div>
       <div className={heroStyles.new}>
