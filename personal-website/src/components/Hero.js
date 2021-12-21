@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <main className=''>
-      <div id='s' className='p-8 sticky z-10 top-0 border-b-4 bg-body' onClick={handleClick}>
+      <div id='s' className='p-8 sticky z-10 top-0 border-4 border-b-indigo-500 bg-body' onClick={handleClick}>
           <Navbar />
       </div>
       <div className={heroStyles.new}>

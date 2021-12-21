@@ -3,13 +3,18 @@ import middleStyles from './Middle.module.css'
 
 const middleSection = (props) => {
   return (
-    <main className='text-black container'>
-      <div id='home' className='h-96'>
-        <h1 className={` ${middleStyles.typewriter}`}>
+    <main className='text-black container max-w-6xl'>
+      <div id='home' className={`${middleStyles.title}`}>
+        <h1 className={`${middleStyles.typewriter}`}>
           Hello, my name is Shinji.
         </h1>
+        <div className="flex justify-center align-center font-light text-lg">
+          <p className={middleStyles.subtitle}>I am currently a second year student at University of Washington - Seattle. I am majoring in Informatics</p>
+        </div>
+
       </div>
-      <div id='about' style={{ height: 500}}>
+      
+      <div id='about' style={{ height: 1000}}>
         <h1>My Projects</h1>
         
       </div>

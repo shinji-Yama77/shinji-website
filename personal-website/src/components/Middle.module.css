@@ -3,6 +3,9 @@
   position: relative;
   font-size: 4rem;
   width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 
@@ -19,16 +22,24 @@
 .typewriter::before {
   background: hsl(49 37% 94%);
   animation: 
-    newwriter 4s steps(25) forwards
+    newwriter 6s steps(25) 1s forwards
 }
+
+
 
 .typewriter::after {
   width: 0.125em;
   background: black;
   animation: 
-    newwriter 4s steps(25) forwards
+    newwriter 6s steps(25) 1s forwards, 
+    blink 750ms steps(25) infinite
 }
 
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
 
 
 @keyframes newwriter {
@@ -37,6 +48,24 @@
   }
 }
 
+.title {
+  height: 600px;
+  padding-top: 250px;
+}
+
+.subtitle {
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 8s forwards; 
+  margin-top: 25px;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
