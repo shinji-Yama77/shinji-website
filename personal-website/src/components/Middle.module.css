@@ -49,8 +49,8 @@
 }
 
 .title {
-  height: 600px;
-  padding-top: 250px;
+  height: 1000px;
+  padding-top: 350px;
 }
 
 .subtitle {
@@ -67,5 +67,17 @@
   }
 }
 
+.fig {
+  height: 400px;
+  border-radius: 30px;
+}
 
+.project {
+  color: black;
+  display: inline-block;
+}
 
+.btn {
+  display: block;
+  
+}
