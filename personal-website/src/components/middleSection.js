@@ -6,10 +6,10 @@ const middleSection = (props) => {
   return (
     <main className='text-black container max-w-6xl'>
       <div id='home' className={`${middleStyles.title}`}>
-        <h1 className={`${middleStyles.typewriter}`}>
+        <h1 className={`text-2xl ${middleStyles.typewriter}`}>
           Hello, my name is Shinji.
         </h1>
-        <div className="flex justify-center align-center font-light text-lg">
+        <div className="flex justify-center align-center font-light text-center lg:text-lg text-sm">
           <p className={middleStyles.subtitle}>I am currently a second year student at University of Washington - Seattle. I am majoring in Informatics</p>
           <button></button>
         </div>
@@ -24,8 +24,26 @@ const middleSection = (props) => {
 
       </div>
       <div id='contact' style={{ height: 1100}} >
-        <h1>This is Contact Section</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
+        <form action="">
+          <div className='flex flex-wrap mx-3 mb-6'>
+            <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+              First Name
+              </label>
+              <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
+              <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            </div>
+            <div class="w-full md:w-1/2 px-3">
+              <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                Last Name
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
+            </div>
+          </div>
+
+          
+          
+        </form>
       </div>
       
     </main>
